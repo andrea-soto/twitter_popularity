@@ -1,3 +1,0 @@
-
-I got executed with 3 args, they are: 5, 30, 10
-

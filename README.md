@@ -29,10 +29,10 @@ $(find target -iname "*assembly*.jar") <Sampling_Interval> <Aggregation_Interval
 
 Where the following are input parameters:
 
-- **Sampling_Interval (sec):** Interval to sample twwets
+- **Sampling_Interval (sec):** Interval to sample tweets
 - **Aggregation_Interval (sec):** How much time should be used to aggregate and count popular tweets. 
 - **TopN:** Number of top hashtags to report
-- **<Optional_Filter:** Optional tweet filters
+- **Optional_Filter (optional):** Terms to filter tweets (if more than one, separate each term with a space)
 
 # Output
 
@@ -53,7 +53,7 @@ Top 10 hashtags in last 10 seconds (55 total):
      Mentions (2): TheIdesofJune,BuyOnBudget
 ```
 
-The program first prints the time of the report, follwed by a line summarizing the report (number of hasthags, aggregation interval, and total tweets seen in the sample)
+The program first prints the time of the report, followed by a line summarizing the report (number of hasthags, aggregation interval, and total tweets seen in the sample)
 
 Then, the hashtags are printed in order of importance (most popular to least popular). For each hashtag, the corresponding users and mentions are printed immediately after the hashtag.
 
@@ -61,7 +61,7 @@ Then, the hashtags are printed in order of importance (most popular to least pop
 
 ### Filtering
 
-The first run was done without filters, and the results proved to be of little significance (file `result_noFilter.txt`).  Because no filters were used, the most popular hashtags were largely unrelated to each other. For example, the top-10 would include #KCA, #VoteEnriqueFPP, #DemDebate, #HoróscopoZino, and #EvilRegals, which are unrelated hashtags and would provide little marketing insights.
+The first run was done without filters, and the results proved to be of little significance (file *result_noFilter.txt*).  Because no filters were used, the most popular hashtags were largely unrelated to each other. For example, the top-10 would include #KCA, #VoteEnriqueFPP, #DemDebate, #HoróscopoZino, and #EvilRegals, which are unrelated hashtags and would provide little marketing insights.
 
 So I included tweet filters so that the hashtags would be related to a category that marketers were targeting. I used the term ‘music’ in the remaining runs.
 

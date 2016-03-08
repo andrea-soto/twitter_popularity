@@ -8,7 +8,7 @@ System for collecting data about 'popular' hashtags and users related to the twe
 
 The popularity of hashtags is determined by the frequency of occurrence of those hashtags in tweets over a sampling period. The system also tracks the authoring user of the tweet containing the hashtag and any user(s) mentioned. For example, if @solange tweets "@jayZ is performing #theblackalbum tonight at Madison Square Garden!! @beyonce will be there!", 'theblackalbum' is a popular topic, and all of the users related to the tweet—'beyonce', 'solange', and 'jayZ'— are recorded.
 
-# File Structure and Execution
+## File Structure and Execution
 
 The file structure of the program is as follows:
 
@@ -34,7 +34,7 @@ Where the following are input parameters:
 - **TopN:** Number of top hashtags to report
 - **Optional_Filter (optional):** Terms to filter tweets (if more than one, separate each term with a space)
 
-# Output
+## Output
 
 A sample of the output is shown below:
 A sample of the output is shown below:
